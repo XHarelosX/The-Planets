@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+.div-planets {
+  display: flex;
+  justify-content: space-between;
+}
+.div-single-planet {
+  margin: 0.5rem;
+}
