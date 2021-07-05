@@ -2,12 +2,56 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 1rem;
+  border-bottom: 1px solid grey;
+  height: 50px;
+  padding-left: 1.5rem;
 }
-.div-planets {
-  display: flex;
-  justify-content: space-between;
+
+.div-planets-desktop {
+  display: none;
+}
+.h2 {
+  color: white;
+  margin: 0;
+  font-family: var(--font);
 }
 .div-single-planet {
-  margin: 0.5rem;
+  margin: 0.3rem;
+  color: white;
+  font-family: var(--font);
+}
+.div-single-planet:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 13px;
+  height: 50px;
+  width: 50px;
+}
+.hamburger-menu:hover {
+  background-color: rgb(24, 24, 102);
+}
+
+.hamburger-menu-span {
+  width: 25px;
+  height: 5px;
+  border-radius: 2px;
+  border: 1px solid black;
+  background-color: rgb(79, 79, 196);
+}
+
+@media screen and (min-width: 756px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .div-planets-desktop {
+    display: flex;
+    padding-right: 1.5rem;
+  }
 }

@@ -1,9 +1,38 @@
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import Header from "./components/Header/Header";
+import SideBar from "./components/Header/SideBar";
+import Backdrop from "./components/UI/backdrop/Backdrop";
 
 function App() {
+  const [toggleMenuAndBackBrop, setToggleMenuAndBackBrop] = useState({
+    isMenuOpen: false,
+    displayBackDrop: false,
+  });
+
+  const hamburgerMenuToggleHandler = () => {
+    setToggleMenuAndBackBrop((prevState) => {
+      return {
+        isMenuOpen: !prevState.isMenuOpen,
+        displayBackDrop: !prevState.displayBackDrop,
+      };
+    });
+  };
+
   return (
     <div className="app">
-      <Header />
+      {ReactDOM.createPortal(
+        <Backdrop
+          displayBackDrop={toggleMenuAndBackBrop.displayBackDrop}
+          toggleHandler={hamburgerMenuToggleHandler}
+        />,
+        document.getElementById("overlay")
+      )}
+      <Header BugrgerHandler={hamburgerMenuToggleHandler} />
+      <SideBar
+        isMenuOpen={toggleMenuAndBackBrop.isMenuOpen}
+        toggleHandler={hamburgerMenuToggleHandler}
+      />
     </div>
   );
 }
