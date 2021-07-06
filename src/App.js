@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Header from "./components/Header/Header";
 import SideBar from "./components/Header/SideBar";
 import Backdrop from "./components/UI/backdrop/Backdrop";
+import SvgEarth from "./icons/Earth";
 
 function App() {
   const [toggleMenuAndBackBrop, setToggleMenuAndBackBrop] = useState({
@@ -29,6 +30,7 @@ function App() {
         document.getElementById("overlay")
       )}
       <Header BugrgerHandler={hamburgerMenuToggleHandler} />
+      <SvgEarth />
       <SideBar
         isMenuOpen={toggleMenuAndBackBrop.isMenuOpen}
         toggleHandler={hamburgerMenuToggleHandler}

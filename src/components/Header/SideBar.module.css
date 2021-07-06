@@ -16,7 +16,7 @@
 
 .div_sidebar_active {
   position: fixed;
-  background-color: rgb(24, 24, 102);
+  background-color: rgb(10 10 62);
   border-left: 1px solid black;
   padding: 1rem 1rem 0 1rem;
   top: 0%;

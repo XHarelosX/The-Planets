@@ -1,0 +1,9 @@
+.div-single-menu-item {
+  margin: 0.3rem 0.5rem;
+  color: white;
+  font-family: var(--font);
+}
+.div-single-menu-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -3,29 +3,30 @@ import styles from "./Header.module.css";
 import HeaderMenuItem from "../UI/header-menu-item/HeaderMenuItem";
 
 const Header = (props) => {
-
-    return (
-      <>
+  return (
+    <>
       <header className={styles.header}>
-      <h2 className={styles.h2}>THE PLANETS</h2>
+        <h2 className={styles.h2}>THE PLANETS</h2>
         <div className={styles["div-planets-desktop"]}>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"MERCURY"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"VENUS"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"EARTH"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"MARS"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"JUPITER"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"SATURN"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"URANUS"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"NEPTUNE"}/>
+          <HeaderMenuItem menuText={"MERCURY"} />
+          <HeaderMenuItem menuText={"VENUS"} />
+          <HeaderMenuItem menuText={"EARTH"} />
+          <HeaderMenuItem menuText={"MARS"} />
+          <HeaderMenuItem menuText={"JUPITER"} />
+          <HeaderMenuItem menuText={"SATURN"} />
+          <HeaderMenuItem menuText={"URANUS"} />
+          <HeaderMenuItem menuText={"NEPTUNE"} />
         </div>
-        <div className={styles['hamburger-menu']} onClick={props.BugrgerHandler}>
+        <div
+          className={styles["hamburger-menu"]}
+          onClick={props.BugrgerHandler}
+        >
           <span className={styles["hamburger-menu-span"]}></span>
           <span className={styles["hamburger-menu-span"]}></span>
           <span className={styles["hamburger-menu-span"]}></span>
-        </div>                    
-    </header>
-
-      </>
+        </div>
+      </header>
+    </>
   );
 };
 
