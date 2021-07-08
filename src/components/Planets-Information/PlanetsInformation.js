@@ -1,13 +1,33 @@
-import MarsSvg from "../../icons/Mars";
-import EarthSvg from "../../icons/Earth";
-import SaturnSvg from "../../icons/Saturn";
-import VenusSvg from "../../icons/Venus";
-import JupiterhSvg from "../../icons/Jupiter";
 import MercuryhSvg from "../../icons/Mercury";
-import NeptunehSvg from "../../icons/Neptune";
+import VenusSvg from "../../icons/Venus";
+import EarthSvg from "../../icons/Earth";
+import MarsSvg from "../../icons/Mars";
+import JupiterhSvg from "../../icons/Jupiter";
+import SaturnSvg from "../../icons/Saturn";
 import UranusSvg from "../../icons/Uranus";
+import NeptunehSvg from "../../icons/Neptune";
 
 const planetInformationObject = [
+  {
+    name: "MARCURY",
+    wiki_info:
+      "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals, corresponding to the Greek god Hermes (Ἑρμῆς).",
+    rotetionTime: "176 DAYS",
+    revolutionTime: "88 DAYS",
+    radius: "2,439.7 KM",
+    averageTemp: "67°C",
+    componentSvg: MercuryhSvg,
+  },
+  {
+    name: "VENUS",
+    wiki_info:
+      "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
+    rotetionTime: "−116.75 (SOLAR DAYS)",
+    revolutionTime: "224.7 DAYS",
+    radius: "6,051.8 KM",
+    averageTemp: "464°C",
+    componentSvg: VenusSvg,
+  },
   {
     name: "EARTH",
     wiki_info:
@@ -15,7 +35,7 @@ const planetInformationObject = [
     rotetionTime: "0.99 DAYS",
     revolutionTime: "356.26 DAYS",
     radius: "6,371 KM",
-    averageTemp: "16°C",
+    averageTemp: "14°C",
     componentSvg: EarthSvg,
   },
   {
@@ -31,62 +51,42 @@ const planetInformationObject = [
   {
     name: "JUPITER",
     wiki_info:
-      'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
-    rotetionTime: "1.03 DAYS",
-    revolutionTime: "1.88 YEARS",
-    radius: "3,389 KM",
-    averageTemp: "−63°C",
+      "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun. Jupiter is the third-brightest natural object in the Earth's night sky after the Moon and Venus.",
+    rotetionTime: "9.92 HOURS (SOLAR DAYS)",
+    revolutionTime: "11.8 YEARS",
+    radius: "66,854 KM",
+    averageTemp: "−108°C",
     componentSvg: JupiterhSvg,
   },
   {
     name: "SATURN",
     wiki_info:
-      'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
-    rotetionTime: "1.03 DAYS",
-    revolutionTime: "1.88 YEARS",
-    radius: "3,389 KM",
-    averageTemp: "−63°C",
+      "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive. Saturn is named after the Roman god of wealth and agriculture; its astronomical symbol (♄) represents the god's sickle.",
+    rotetionTime: "10.8 HOURS",
+    revolutionTime: "29.46 YEARS",
+    radius: "58,232 KM",
+    averageTemp: "−138°C",
     componentSvg: SaturnSvg,
   },
   {
-    name: "VENUS",
+    name: "URANUS",
     wiki_info:
-      'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
-    rotetionTime: "1.03 DAYS",
-    revolutionTime: "1.88 YEARS",
-    radius: "3,389 KM",
-    averageTemp: "−63°C",
-    componentSvg: VenusSvg,
-  },
-  {
-    name: "MARS",
-    wiki_info:
-      'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
-    rotetionTime: "1.03 DAYS",
-    revolutionTime: "1.88 YEARS",
-    radius: "3,389 KM",
-    averageTemp: "−63°C",
-    componentSvg: MercuryhSvg,
-  },
-  {
-    name: "MARS",
-    wiki_info:
-      'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
-    rotetionTime: "1.03 DAYS",
-    revolutionTime: "1.88 YEARS",
-    radius: "3,389 KM",
-    averageTemp: "−63°C",
-    componentSvg: NeptunehSvg,
-  },
-  {
-    name: "MARS",
-    wiki_info:
-      'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
-    rotetionTime: "1.03 DAYS",
-    revolutionTime: "1.88 YEARS",
-    radius: "3,389 KM",
-    averageTemp: "−63°C",
+      "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) and father of Cronus (Saturn). It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
+    rotetionTime: "−0.718 SOLAR DAYS",
+    revolutionTime: "84.02 YEARS",
+    radius: "25,362 KM",
+    averageTemp: "−197.2°C",
     componentSvg: UranusSvg,
+  },
+  {
+    name: "NEPTUNE",
+    wiki_info:
+      "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, slightly more massive than its near-twin Uranus.",
+    rotetionTime: "16 HOURS",
+    revolutionTime: "164.8 YEARS",
+    radius: "24,622 KM",
+    averageTemp: "−201°C",
+    componentSvg: NeptunehSvg,
   },
 ];
 

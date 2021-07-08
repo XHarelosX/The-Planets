@@ -4,7 +4,7 @@ import planetInfoArray from "../../Planets-Information/PlanetsInformation";
 import InnerMenuPlanetPage from "../inner-manu-planet-page/InnerMenuPlanetPage";
 
 function InfoSection() {
-  const SVG_PLANET = planetInfoArray[0].componentSvg();
+  const SVG_PLANET = planetInfoArray[6].componentSvg();
 
   return (
     <>
@@ -13,8 +13,8 @@ function InfoSection() {
         <div className={styles.planet_icon_div}>{SVG_PLANET}</div>
         <div className={styles.div_info}>
           <div className={styles.info_container}>
-            <h1>{planetInfoArray[0].name}</h1>
-            <p>{planetInfoArray[0].wiki_info}</p>
+            <h1>{planetInfoArray[6].name}</h1>
+            <p>{planetInfoArray[6].wiki_info}</p>
             <p>
               Source:{" "}
               <span>
