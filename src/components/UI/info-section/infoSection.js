@@ -8,23 +8,28 @@ function InfoSection() {
 
   return (
     <>
-      <InnerMenuPlanetPage />
+      <InnerMenuPlanetPage Classes={styles.planet_inner_menu} />
       <div className={styles.info_and_icon_container}>
         <div className={styles.planet_icon_div}>{SVG_PLANET}</div>
-        <div className={styles.info_div}>
-          <h1>{planetInfoArray[0].name}</h1>
-          <p>{planetInfoArray[0].wiki_info}</p>
-          <p>
-            Source:{" "}
-            <span>
-              <a
-                className={styles.source_wiki}
-                href={`https://en.wikipedia.org/wiki/${planetInfoArray[0].name.toLowerCase()}`}
-              >
-                Wikipedia
-              </a>
-            </span>
-          </p>
+        <div className={styles.div_info}>
+          <div className={styles.info_container}>
+            <h1>{planetInfoArray[0].name}</h1>
+            <p>{planetInfoArray[0].wiki_info}</p>
+            <p>
+              Source:{" "}
+              <span>
+                <a
+                  className={styles.source_wiki}
+                  href={`https://en.wikipedia.org/wiki/${planetInfoArray[0].name.toLowerCase()}`}
+                >
+                  Wikipedia
+                </a>
+              </span>
+            </p>
+          </div>
+          <InnerMenuPlanetPage Classes={styles.planet_inner_menu_tablet} />
+        </div>
+        <div className={styles.div_planet_rotation_info}>
           <div className={styles.div_planet_info}>
             <h4>ROTETION TIME</h4>
             <p>{planetInfoArray[0].rotetionTime}</p>

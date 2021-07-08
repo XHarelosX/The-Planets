@@ -1,5 +1,11 @@
 import MarsSvg from "../../icons/Mars";
 import EarthSvg from "../../icons/Earth";
+import SaturnSvg from "../../icons/Saturn";
+import VenusSvg from "../../icons/Venus";
+import JupiterhSvg from "../../icons/Jupiter";
+import MercuryhSvg from "../../icons/Mercury";
+import NeptunehSvg from "../../icons/Neptune";
+import UranusSvg from "../../icons/Uranus";
 
 const planetInformationObject = [
   {
@@ -23,14 +29,34 @@ const planetInformationObject = [
     componentSvg: MarsSvg,
   },
   {
-    name: "MARS",
+    name: "JUPITER",
     wiki_info:
       'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
     rotetionTime: "1.03 DAYS",
     revolutionTime: "1.88 YEARS",
     radius: "3,389 KM",
     averageTemp: "−63°C",
-    componentSvg: EarthSvg,
+    componentSvg: JupiterhSvg,
+  },
+  {
+    name: "SATURN",
+    wiki_info:
+      'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
+    rotetionTime: "1.03 DAYS",
+    revolutionTime: "1.88 YEARS",
+    radius: "3,389 KM",
+    averageTemp: "−63°C",
+    componentSvg: SaturnSvg,
+  },
+  {
+    name: "VENUS",
+    wiki_info:
+      'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
+    rotetionTime: "1.03 DAYS",
+    revolutionTime: "1.88 YEARS",
+    radius: "3,389 KM",
+    averageTemp: "−63°C",
+    componentSvg: VenusSvg,
   },
   {
     name: "MARS",
@@ -40,7 +66,7 @@ const planetInformationObject = [
     revolutionTime: "1.88 YEARS",
     radius: "3,389 KM",
     averageTemp: "−63°C",
-    componentSvg: EarthSvg,
+    componentSvg: MercuryhSvg,
   },
   {
     name: "MARS",
@@ -50,7 +76,7 @@ const planetInformationObject = [
     revolutionTime: "1.88 YEARS",
     radius: "3,389 KM",
     averageTemp: "−63°C",
-    componentSvg: EarthSvg,
+    componentSvg: NeptunehSvg,
   },
   {
     name: "MARS",
@@ -60,27 +86,7 @@ const planetInformationObject = [
     revolutionTime: "1.88 YEARS",
     radius: "3,389 KM",
     averageTemp: "−63°C",
-    componentSvg: EarthSvg,
-  },
-  {
-    name: "MARS",
-    wiki_info:
-      'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
-    rotetionTime: "1.03 DAYS",
-    revolutionTime: "1.88 YEARS",
-    radius: "3,389 KM",
-    averageTemp: "−63°C",
-    componentSvg: EarthSvg,
-  },
-  {
-    name: "MARS",
-    wiki_info:
-      'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet". The latter refers to the effect of the iron oxide prevalent on Mars\'s surface, which gives it a reddish appearance distinctive among the astronomical bodies visible to the naked eye.',
-    rotetionTime: "1.03 DAYS",
-    revolutionTime: "1.88 YEARS",
-    radius: "3,389 KM",
-    averageTemp: "−63°C",
-    componentSvg: EarthSvg,
+    componentSvg: UranusSvg,
   },
 ];
 

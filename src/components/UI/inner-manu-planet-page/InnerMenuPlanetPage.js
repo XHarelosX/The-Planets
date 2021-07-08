@@ -1,15 +1,14 @@
 import React from "react";
-import styles from "../info-section/InfoSection.module.css";
 
-const InnerMenuPlanetPage = () => {
+const InnerMenuPlanetPage = (props) => {
   return (
-    <div>
-      <div className={styles.planet_inner_menu}>
+    <>
+      <div className={props.Classes}>
         <h4>OVERVIEW</h4>
         <h4>STRUCTUE</h4>
         <h4>SURFACE</h4>
       </div>
-    </div>
+    </>
   );
 };
 
