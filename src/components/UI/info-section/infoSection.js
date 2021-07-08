@@ -4,7 +4,7 @@ import planetInfoArray from "../../Planets-Information/PlanetsInformation";
 import InnerMenuPlanetPage from "../inner-manu-planet-page/InnerMenuPlanetPage";
 
 function InfoSection() {
-  const SVG_PLANET = planetInfoArray[6].componentSvg();
+  const SVG_PLANET = planetInfoArray[0].componentSvg();
 
   return (
     <>
@@ -13,8 +13,8 @@ function InfoSection() {
         <div className={styles.planet_icon_div}>{SVG_PLANET}</div>
         <div className={styles.div_info}>
           <div className={styles.info_container}>
-            <h1>{planetInfoArray[6].name}</h1>
-            <p>{planetInfoArray[6].wiki_info}</p>
+            <h1>{planetInfoArray[0].name}</h1>
+            <p>{planetInfoArray[0].wiki_info}</p>
             <p>
               Source:{" "}
               <span>
@@ -29,7 +29,7 @@ function InfoSection() {
           </div>
           <InnerMenuPlanetPage Classes={styles.planet_inner_menu_tablet} />
         </div>
-        <div className={styles.div_planet_rotation_info}>
+        <div className={styles.div_planet_all_info}>
           <div className={styles.div_planet_info}>
             <h4>ROTETION TIME</h4>
             <p>{planetInfoArray[0].rotetionTime}</p>
@@ -42,7 +42,7 @@ function InfoSection() {
             <h4>RADIUS</h4>
             <p>{planetInfoArray[0].radius}</p>
           </div>
-          <div className={styles.div_planet_info}>
+          <div className={styles.div_planet_info_last}>
             <h4>AVERAGE TEMP.</h4>
             <p>{planetInfoArray[0].averageTemp}</p>
           </div>
