@@ -1,22 +1,22 @@
 import React from 'react'
-import HeaderMenuItem from '../UI/header-menu-item/HeaderMenuItem';
+import NavBarMenuItem from '../UI/navbar-menu-item/NavBarMenuItem';
 import styles from "./SideBar.module.css"
 
 const sideBar = (props) => {
 
 
     return (
-        <div className={props.isMenuOpen ? styles["div_sidebar_active"] : styles["div_sidebar"]}
+        <nav className={props.isMenuOpen ? styles["div_sidebar_active"] : styles["div_sidebar"]}
         onClick={props.toggleHandler}>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"MERCURY"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"VENUS"} />
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"EARTH"} />
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"MARS"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"JUPITER"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"SATURN"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"URANUS"}/>
-            <HeaderMenuItem Classes={styles["div-single-planet"]} menuText={"NEPTUNE"}/>
-        </div>        
+            <NavBarMenuItem Classes={styles["div-single-planet"]} menuText={"MERCURY"}/>
+            <NavBarMenuItem Classes={styles["div-single-planet"]} menuText={"VENUS"} />
+            <NavBarMenuItem Classes={styles["div-single-planet"]} menuText={"EARTH"} />
+            <NavBarMenuItem Classes={styles["div-single-planet"]} menuText={"MARS"}/>
+            <NavBarMenuItem Classes={styles["div-single-planet"]} menuText={"JUPITER"}/>
+            <NavBarMenuItem Classes={styles["div-single-planet"]} menuText={"SATURN"}/>
+            <NavBarMenuItem Classes={styles["div-single-planet"]} menuText={"URANUS"}/>
+            <NavBarMenuItem Classes={styles["div-single-planet"]} menuText={"NEPTUNE"}/>
+        </nav>        
     )
 }
 

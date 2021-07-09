@@ -1,22 +1,22 @@
 import React from "react";
 import styles from "./Header.module.css";
-import HeaderMenuItem from "../UI/header-menu-item/HeaderMenuItem";
+import NavBarMenuItem from "../UI/navbar-menu-item/NavBarMenuItem";
 
 const Header = (props) => {
   return (
     <>
       <header className={styles.header}>
         <h2 className={styles.h2}>THE PLANETS</h2>
-        <div className={styles["div-planets-desktop"]}>
-          <HeaderMenuItem menuText={"MERCURY"} />
-          <HeaderMenuItem menuText={"VENUS"} />
-          <HeaderMenuItem menuText={"EARTH"} />
-          <HeaderMenuItem menuText={"MARS"} />
-          <HeaderMenuItem menuText={"JUPITER"} />
-          <HeaderMenuItem menuText={"SATURN"} />
-          <HeaderMenuItem menuText={"URANUS"} />
-          <HeaderMenuItem menuText={"NEPTUNE"} />
-        </div>
+        <nav className={styles["div-planets-desktop"]}>
+          <NavBarMenuItem menuText={"MERCURY"} />
+          <NavBarMenuItem menuText={"VENUS"} />
+          <NavBarMenuItem menuText={"EARTH"} />
+          <NavBarMenuItem menuText={"MARS"} />
+          <NavBarMenuItem menuText={"JUPITER"} />
+          <NavBarMenuItem menuText={"SATURN"} />
+          <NavBarMenuItem menuText={"URANUS"} />
+          <NavBarMenuItem menuText={"NEPTUNE"} />
+        </nav>
         <div
           className={styles["hamburger-menu"]}
           onClick={props.BugrgerHandler}

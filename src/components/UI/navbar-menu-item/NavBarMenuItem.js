@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./HeaderItem.module.css";
+import styles from "./NavBarItem.module.css";
 
-const headerMenuItem = (props) => {
+const NavBarMenuItem = (props) => {
   return <div className={styles["div-single-menu-item"]}>{props.menuText}</div>;
 };
 
-export default headerMenuItem;
+export default NavBarMenuItem;
