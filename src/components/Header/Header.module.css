@@ -4,7 +4,7 @@
   justify-content: space-between;
   border-bottom: 1px solid grey;
   height: 50px;
-  padding: 0 0.8rem;
+  padding: 0 0 0 0.8rem;
 }
 
 .div-planets-desktop {
@@ -22,9 +22,9 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 13px;
-  height: 50px;
-  width: 50px;
+  padding: 7px 13px 8px 13px;
+  height: 49px;
+  width: 60px;
 }
 .hamburger-menu:hover {
   background-color: rgb(14, 14, 90);
@@ -44,5 +44,11 @@
   }
   .div-planets-desktop {
     display: flex;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header {
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
   }
 }

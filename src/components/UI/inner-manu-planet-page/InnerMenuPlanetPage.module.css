@@ -1,0 +1,29 @@
+.span_num {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .overwiew_menu {
+    display: flex;
+    width: 100%;
+    border: 1px solid gray;
+  }
+  .overwiew_menu:hover {
+    background-color: rgb(85, 3, 161);
+  }
+
+  .overwiew_menu h4 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  .span_num {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 25%;
+  }
+}
+@media (min-width: 1025px) {
+    
+}

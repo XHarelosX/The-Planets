@@ -1,7 +1,8 @@
 .div-single-menu-item {
-  margin: 0.3rem 0.5rem;
+  margin: 0.7rem 0.5rem;
   color: white;
   font-family: var(--font);
+  font-size: 1.4rem;
 }
 .div-single-menu-item:hover {
   text-decoration: underline;

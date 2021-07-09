@@ -29,23 +29,23 @@ function InfoSection() {
           </div>
           <InnerMenuPlanetPage Classes={styles.planet_inner_menu_tablet} />
         </div>
-        <div className={styles.div_planet_all_info}>
-          <div className={styles.div_planet_info}>
-            <h4>ROTETION TIME</h4>
-            <p>{planetInfoArray[0].rotetionTime}</p>
-          </div>
-          <div className={styles.div_planet_info}>
-            <h4>REVOLUTION TIME</h4>
-            <p>{planetInfoArray[0].revolutionTime}</p>
-          </div>
-          <div className={styles.div_planet_info}>
-            <h4>RADIUS</h4>
-            <p>{planetInfoArray[0].radius}</p>
-          </div>
-          <div className={styles.div_planet_info_last}>
-            <h4>AVERAGE TEMP.</h4>
-            <p>{planetInfoArray[0].averageTemp}</p>
-          </div>
+      </div>
+      <div className={styles.div_planet_all_info}>
+        <div className={styles.div_planet_info}>
+          <h4>ROTETION TIME</h4>
+          <p>{planetInfoArray[0].rotetionTime}</p>
+        </div>
+        <div className={styles.div_planet_info}>
+          <h4>REVOLUTION TIME</h4>
+          <p>{planetInfoArray[0].revolutionTime}</p>
+        </div>
+        <div className={styles.div_planet_info}>
+          <h4>RADIUS</h4>
+          <p>{planetInfoArray[0].radius}</p>
+        </div>
+        <div className={styles.div_planet_info_last}>
+          <h4>AVERAGE TEMP.</h4>
+          <p>{planetInfoArray[0].averageTemp}</p>
         </div>
       </div>
     </>
