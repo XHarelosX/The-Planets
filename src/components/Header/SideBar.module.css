@@ -12,23 +12,9 @@
   flex-direction: column;
   align-items: center;
   transition: 200ms;
-  
 }
-
-.div_sidebar_active {
-  position: fixed;
-  background-color: rgb(10 10 62);
-  border-left: 1px solid black;
-  padding: 1rem 1rem 0 1rem;
-  top: 0%;
-  color: white;
+._active {
   right: 0%;
-  width: 170px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: 200ms;  
 }
 
 .div-single-planet {
