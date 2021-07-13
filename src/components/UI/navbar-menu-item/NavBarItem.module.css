@@ -8,3 +8,6 @@
   text-decoration: underline;
   cursor: pointer;
 }
+li {
+  list-style: none;
+}

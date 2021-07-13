@@ -7,9 +7,9 @@ import SaturnSvg from "../../icons/Saturn";
 import UranusSvg from "../../icons/Uranus";
 import NeptunehSvg from "../../icons/Neptune";
 
-const planetInformationObject = [
+const planetInformationObjectsArray = [
   {
-    name: "MARCURY",
+    name: "MERCURY",
     wiki_info:
       "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals, corresponding to the Greek god Hermes (Ἑρμῆς).",
     rotetionTime: "176 DAYS",
@@ -52,7 +52,7 @@ const planetInformationObject = [
     name: "JUPITER",
     wiki_info:
       "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun. Jupiter is the third-brightest natural object in the Earth's night sky after the Moon and Venus.",
-    rotetionTime: "9.92 HOURS (SOLAR DAYS)",
+    rotetionTime: "9.92Hr SOLAR DAYS",
     revolutionTime: "11.8 YEARS",
     radius: "66,854 KM",
     averageTemp: "−108°C",
@@ -90,4 +90,4 @@ const planetInformationObject = [
   },
 ];
 
-export default planetInformationObject;
+export default planetInformationObjectsArray;

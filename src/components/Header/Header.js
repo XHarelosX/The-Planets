@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "./Header.module.css";
-import NavBarMenuItem from "../UI/navbar-menu-item/NavBarMenuItem";
 import { useDispatch } from "react-redux";
+import NavBarMenuItem from "../UI/navbar-menu-item/NavBarMenuItem";
 import { sideBarActions } from "../../Store/SideBar-slice";
 import { backDropAction } from "../../Store/Backdrop-slice";
+import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -17,15 +18,17 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <h2 className={styles.h2}>THE PLANETS</h2>
-        <nav className={styles["div-planets-desktop"]}>
-          <NavBarMenuItem menuText={"MERCURY"} />
-          <NavBarMenuItem menuText={"VENUS"} />
-          <NavBarMenuItem menuText={"EARTH"} />
-          <NavBarMenuItem menuText={"MARS"} />
-          <NavBarMenuItem menuText={"JUPITER"} />
-          <NavBarMenuItem menuText={"SATURN"} />
-          <NavBarMenuItem menuText={"URANUS"} />
-          <NavBarMenuItem menuText={"NEPTUNE"} />
+        <nav>
+          <ul className={styles["div-planets-desktop"]}>
+            <Link to="Mercury"><NavBarMenuItem menuText={"MERCURY"} /></Link>
+            <Link to="Venus"><NavBarMenuItem menuText={"VENUS"} /></Link>
+            <Link to="Earth"><NavBarMenuItem menuText={"EARTH"} /></Link>
+            <Link to="Mars"><NavBarMenuItem menuText={"MARS"} /></Link>
+            <Link to="Jupiter"><NavBarMenuItem menuText={"JUPITER"} /></Link>
+            <Link to="Saturn"><NavBarMenuItem menuText={"SATURN"} /></Link>
+            <Link to="Uranus"><NavBarMenuItem menuText={"URANUS"} /></Link>
+            <Link to="Neptune"><NavBarMenuItem menuText={"NEPTUNE"} /></Link>
+          </ul>
         </nav>
         <div
           className={styles["hamburger-menu"]}

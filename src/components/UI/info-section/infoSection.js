@@ -2,9 +2,17 @@ import React from "react";
 import styles from "./InfoSection.module.css";
 import planetInfoArray from "../../Planets-Information/PlanetsInformation";
 import InnerMenuPlanetPage from "../inner-manu-planet-page/InnerMenuPlanetPage";
+import { useLocation } from "react-router-dom";
 
 function InfoSection() {
-  const SVG_PLANET = planetInfoArray[0].componentSvg();
+  const pathPlanet = useLocation().pathname.replace("/", "");
+  const currPlanet = planetInfoArray.find((planetName) => {
+    if (pathPlanet.toUpperCase() === planetName.name) {
+      return planetName;
+    }
+    return null;
+  });
+  const SVG_PLANET = currPlanet.componentSvg();
 
   return (
     <>
@@ -13,14 +21,14 @@ function InfoSection() {
         <div className={styles.planet_icon_div}>{SVG_PLANET}</div>
         <div className={styles.div_info}>
           <div className={styles.info_container}>
-            <h1>{planetInfoArray[0].name}</h1>
-            <p>{planetInfoArray[0].wiki_info}</p>
+            <h1>{currPlanet.name}</h1>
+            <p>{currPlanet.wiki_info}</p>
             <p>
               Source:{" "}
               <span>
                 <a
                   className={styles.source_wiki}
-                  href={`https://en.wikipedia.org/wiki/${planetInfoArray[0].name.toLowerCase()}`}
+                  href={`https://en.wikipedia.org/wiki/${currPlanet.name.toLowerCase()}`}
                 >
                   Wikipedia
                 </a>
@@ -32,20 +40,20 @@ function InfoSection() {
       </div>
       <div className={styles.div_planet_all_info}>
         <div className={styles.div_planet_info}>
-          <h4>ROTETION TIME</h4>
-          <p>{planetInfoArray[0].rotetionTime}</p>
+          <h4>ROTATION TIME</h4>
+          <p>{currPlanet.rotetionTime}</p>
         </div>
         <div className={styles.div_planet_info}>
           <h4>REVOLUTION TIME</h4>
-          <p>{planetInfoArray[0].revolutionTime}</p>
+          <p>{currPlanet.revolutionTime}</p>
         </div>
         <div className={styles.div_planet_info}>
           <h4>RADIUS</h4>
-          <p>{planetInfoArray[0].radius}</p>
+          <p>{currPlanet.radius}</p>
         </div>
         <div className={styles.div_planet_info_last}>
           <h4>AVERAGE TEMP.</h4>
-          <p>{planetInfoArray[0].averageTemp}</p>
+          <p>{currPlanet.averageTemp}</p>
         </div>
       </div>
     </>
