@@ -1,6 +1,8 @@
+import "./icons_iternal.css";
 function SvgInternalStructureMercury(props) {
   return (
     <svg
+      className="svg_animate_iternal"
       id="Mercury_svg__Layer_1"
       xmlns="http://www.w3.org/2000/svg"
       x={0}

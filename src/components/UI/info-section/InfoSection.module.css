@@ -9,6 +9,9 @@
 }
 .planet_icon_div {
   width: 300px;
+  animation-name: AnimatePlanet2;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
 }
 .info_container {
   flex: 0 1 400px;
@@ -233,5 +236,20 @@
   .div_planet_info_last p {
     font-size: 2.2rem;
     margin: 0;
+  }
+}
+
+.svg_animate2 {
+  animation-name: AnimatePlanet2;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+
+@keyframes AnimatePlanet2 {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }

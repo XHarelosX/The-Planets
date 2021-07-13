@@ -1,0 +1,14 @@
+.svg_animate_iternal {
+  animation-name: AnimatePlanetMain2;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+}
+
+@keyframes AnimatePlanetMain2 {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

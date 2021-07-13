@@ -1,18 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./InfoSection.module.css";
 import planetInfoArray from "../../Planets-Information/PlanetsInformation";
 import InnerMenuPlanetPage from "../inner-manu-planet-page/InnerMenuPlanetPage";
 import { useLocation } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { IternalStructureAction } from "../../../Store/IternalStructure-slice";
 
 function InfoSection() {
   let SVG_PLANET;
   let SVG_ITERNAL_STRUCTURE;
-  const [toggleIternalStructure, setToggleIternalStructure] = useState(false);
+
+  const dispatch = useDispatch();
+  const showIternalStructure = useSelector(
+    (state) => state.IternalStructure.toggleDisplay
+  );
 
   const pathPlanet = useLocation().pathname.replace("/", "") || "Mercury";
 
   let currPlanet = planetInfoArray.find((planetName) => {
-    if (pathPlanet.toUpperCase() === planetName.name) {
+    if (pathPlanet.toUpperCase() === planetName.name) {      
       SVG_PLANET = planetName.componentSvg();
       SVG_ITERNAL_STRUCTURE = planetName.InternalStructureSvg();
       return planetName;
@@ -26,7 +32,7 @@ function InfoSection() {
   }
 
   const toggleIternalStructureHandler = () => {
-    setToggleIternalStructure((prevstate) => !prevstate);
+    dispatch(IternalStructureAction.toggleIternalDisplay());
   };
 
   return (
@@ -37,7 +43,7 @@ function InfoSection() {
       />
       <div className={styles.info_and_icon_container}>
         <div className={styles.planet_icon_div}>
-          {toggleIternalStructure ? SVG_ITERNAL_STRUCTURE : SVG_PLANET}
+          {showIternalStructure ? SVG_ITERNAL_STRUCTURE : SVG_PLANET}
         </div>
         <div className={styles.div_info}>
           <div className={styles.info_container}>

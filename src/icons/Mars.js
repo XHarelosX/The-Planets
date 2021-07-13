@@ -1,6 +1,8 @@
+import "./icons.css";
 function SvgMars(props) {
   return (
     <svg
+      className="svg_animate_start"
       id="Mars_svg__Layer_1"
       xmlns="http://www.w3.org/2000/svg"
       x={0}
@@ -23,55 +25,55 @@ function SvgMars(props) {
         fill="#ff6a5a"
       />
       <path
-        className="Mars_svg__st2"
+        className="Mars_svg__st2 svg_animate"
         d="M341.9 357.8c0 6.6-4.7 11.8-10.6 11.8l-37.4-.5c-6 0-11 5.2-11 11.8 0 6.7 4.8 11.6 10.8 11.6 6 0 10.8 4.9 10.8 11.6 0 6.6-4.4 12.3-10.4 12.3l-121.4-.5c-4-7.7-7.6-15.6-10.8-23.7l35.1-.1c6 0 11-4.4 11-11 0-6.7-6.3-12.2-12.2-12.2l-41.9-.3c-2.2-7.8-4.1-15.7-5.6-23.7l66.4.2 116.2.8c5.9.1 11 5.3 11 11.9z"
       />
       <path
+        className="svg_animate_delayed"
         d="M393.6 116c0 6.7-4.8 11.8-10.8 11.8l-74.7-.3-98.4-.6c7.4-8.2 15.3-16 23.7-23.2 3.9-3.4 8-6.7 12.1-9.8 20.7-15.7 43.9-28.4 68.8-37.2l46.7.2c6 0 11 5.1 11 11.8 0 6.7-4.2 11.8-10.2 11.8l-36.1.1c-6 0-11 4.3-11 11s6.3 12.2 12.2 12.2l56.2.4c6.1 0 10.5 5.2 10.5 11.8z"
         fill="#eab3b0"
       />
       <path
-        className="Mars_svg__st2"
+        className="Mars_svg__st2 svg_animate_delayed2"
         d="M399.3 496.6l-36.1.1c-6 0-11-5.1-11-11.8 0-6.6 4.2-11.8 10.1-11.8l37-.6v24.1zM399.5 208.2l-.1 24.7-96.1-.7c-6 0-11-5.1-11-11.8 0-6.6 4.2-11.8 10.2-11.8l36.1-.1 60.9-.3z"
       />
       <path
-        className="Mars_svg__st4"
+        className="Mars_svg__st4 svg_animate_delayed2"
         d="M399.4 232.9l.1-24.7 95.5.8c6 0 11 5.1 11 11.8 0 6.6-4.2 11.8-10.1 11.8l-36 .1-60.5.2z"
       />
       <path
-        className="Mars_svg__st2"
+        className="Mars_svg__st2 svg_animate_delayed"
         d="M399.7 309.6l-35.5-.4c-6 0-11-5.1-11-11.8 0-6.6 4.2-11.8 10.1-11.8l36.4.1v23.9z"
       />
       <path
-        className="Mars_svg__st4"
+        className="Mars_svg__st4 svg_animate"
         d="M399.4 285.7l86.7.4c14.6 0 18.9 4.9 18.9 11.6 0 6.6-3.9 11.5-18.4 11.5l-87.4.5.2-24z"
       />
-      <circle className="Mars_svg__st2" cx={382.6} cy={143} r={13.2} />
+      <circle className="Mars_svg__st2 svg_animate" cx={382.6} cy={143} r={13.2} />
       <path
-        className="Mars_svg__st4"
+        className="Mars_svg__st4 svg_animate_delayed"
         d="M399.3 472.5l143.1-.1c6 0 11 5.1 11 11.8 0 6.6-4.2 11.8-10.1 11.8l-143.9.6-.1-24.1zM594.8 133.5c-2.1 4.6-6.7 7.8-12 7.8-7.3 0-13.2-5.9-13.2-13.2 0-5.7 3.6-10.6 8.7-12.4 5.8 5.6 11.3 11.6 16.5 17.8z"
       />
       <circle
-        transform="rotate(-80.781 515.973 111.922)"
-        className="Mars_svg__st5"
+        className="Mars_svg__st5 svg_animate_delayed2"
         cx={516}
         cy={111.9}
         r={13.2}
       />
       <path
-        className="Mars_svg__st5"
+        className="Mars_svg__st5 svg_animate_delayed"
         d="M638.7 380.3c-8.8 25.6-21.5 49.4-37.4 70.7l-51.6-.2c-6 0-11-5.1-11-11.8 0-6.7 4.2-11.8 10.2-11.8l36.1-.1c6 0 11-4.4 11-11 0-6.7-6.3-12.2-12.2-12.2l-56.2-.4c-6 0-10.4-5.2-10.4-11.8 0-6.6 4.8-11.8 10.8-11.8l74.7.3 36 .1z"
       />
       <path
-        className="Mars_svg__st2"
+        className="Mars_svg__st2 svg_animate_delayed2"
         d="M284.3 464.8h21.5c5.9 0 10.1-5.1 10.1-11.8 0-6.7-5-11.8-11-11.8l-20.5-.4h-33.3c-5.4 0-9.3 5.1-9.3 11.8 0 6.7 4.6 11.8 10.1 11.8l32.4.4zM265.9 153.2h21.5c5.9 0 10.1-5.1 10.1-11.8 0-6.7-5-11.8-11-11.8l-20.5-.4h-33.3c-5.4 0-9.3 5.1-9.3 11.8 0 6.7 4.6 11.8 10.1 11.8l32.4.4z"
       />
       <path
-        className="Mars_svg__st4"
+        className="Mars_svg__st4 svg_animate"
         d="M578.6 382h21.5c5.9 0 10.1-5.1 10.1-11.8 0-6.7-5-11.8-11-11.8l-20.5-.4h-33.3c-5.4 0-9.3 5.1-9.3 11.8 0 6.7 4.6 11.8 10 11.8l32.5.4zM445.2 364.8h21.5c5.9 0 10.1-5.1 10.1-11.8 0-6.7-5-11.8-11-11.8l-20.5-.4H412c-5.4 0-9.3 5.1-9.3 11.8 0 6.7 4.6 11.8 10 11.8l32.5.4z"
       />
       <path
-        className="Mars_svg__st2"
+        className="Mars_svg__st2 svg_animate_delayed"
         d="M286 314l-88.6-.6c-4.5 0-8.4-3.9-8.4-9s3.6-9 8.1-9l28.5.4c4.6 0 8.4-4 8.4-9s-3.7-8.9-8.3-8.9-8.3-3.7-8.3-8.9c0-5.1 3.4-9.4 7.9-9.4l101 .4c4.6 0 8.4 3.9 8.4 9s-3.2 9-7.8 9h-27.5c-4.6 0-8.4 3.3-8.4 8.4s4.8 9.3 9.3 9.3l42.9.3c4.6 0 7.9 4 7.9 9s-3.7 9-8.3 9H286z"
       />
     </svg>

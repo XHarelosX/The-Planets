@@ -1,8 +1,9 @@
-import * as React from "react";
+import "./icons_iternal.css";
 
 function SvgInternalStructureEarth(props) {
   return (
     <svg
+      className="svg_animate_iternal"
       id="Earth_svg__Layer_1"
       xmlns="http://www.w3.org/2000/svg"
       x={0}
