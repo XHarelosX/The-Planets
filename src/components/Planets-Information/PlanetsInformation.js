@@ -6,6 +6,14 @@ import JupiterhSvg from "../../icons/Jupiter";
 import SaturnSvg from "../../icons/Saturn";
 import UranusSvg from "../../icons/Uranus";
 import NeptunehSvg from "../../icons/Neptune";
+import EarthStructure from "../../icons/InternalStructure/Earth-Iternal-Structure";
+import MercuryStructure from "../../icons/InternalStructure/Mercury-Iternal-Structure";
+import VenusStructure from "../../icons/InternalStructure/Venus-Iternal-Structure";
+import MarsStructure from "../../icons/InternalStructure/Mars-Iternal-Structure";
+import JupiterStructure from "../../icons/InternalStructure/Jupiter-Iternal-Structure";
+import SaturnStructure from "../../icons/InternalStructure/Saturn-Iternal-Structure";
+import UranusStructure from "../../icons/InternalStructure/Uranus-Iternal-Structure";
+import NeptuneStructure from "../../icons/InternalStructure/Neptune-Iternal-Structure";
 
 const planetInformationObjectsArray = [
   {
@@ -17,6 +25,7 @@ const planetInformationObjectsArray = [
     radius: "2,439.7 KM",
     averageTemp: "67°C",
     componentSvg: MercuryhSvg,
+    InternalStructureSvg: MercuryStructure,
   },
   {
     name: "VENUS",
@@ -27,6 +36,7 @@ const planetInformationObjectsArray = [
     radius: "6,051.8 KM",
     averageTemp: "464°C",
     componentSvg: VenusSvg,
+    InternalStructureSvg: VenusStructure,
   },
   {
     name: "EARTH",
@@ -37,6 +47,7 @@ const planetInformationObjectsArray = [
     radius: "6,371 KM",
     averageTemp: "14°C",
     componentSvg: EarthSvg,
+    InternalStructureSvg: EarthStructure,
   },
   {
     name: "MARS",
@@ -47,6 +58,7 @@ const planetInformationObjectsArray = [
     radius: "3,389 KM",
     averageTemp: "−63°C",
     componentSvg: MarsSvg,
+    InternalStructureSvg: MarsStructure,
   },
   {
     name: "JUPITER",
@@ -57,6 +69,7 @@ const planetInformationObjectsArray = [
     radius: "66,854 KM",
     averageTemp: "−108°C",
     componentSvg: JupiterhSvg,
+    InternalStructureSvg: JupiterStructure,
   },
   {
     name: "SATURN",
@@ -67,6 +80,7 @@ const planetInformationObjectsArray = [
     radius: "58,232 KM",
     averageTemp: "−138°C",
     componentSvg: SaturnSvg,
+    InternalStructureSvg: SaturnStructure,
   },
   {
     name: "URANUS",
@@ -77,6 +91,7 @@ const planetInformationObjectsArray = [
     radius: "25,362 KM",
     averageTemp: "−197.2°C",
     componentSvg: UranusSvg,
+    InternalStructureSvg: UranusStructure,
   },
   {
     name: "NEPTUNE",
@@ -87,6 +102,7 @@ const planetInformationObjectsArray = [
     radius: "24,622 KM",
     averageTemp: "−201°C",
     componentSvg: NeptunehSvg,
+    InternalStructureSvg: NeptuneStructure,
   },
 ];
 
