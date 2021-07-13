@@ -96,7 +96,7 @@
   }
   .planet_inner_menu_tablet {
     display: block;
-    flex: 0 1 25vw;
+    flex: 0 1 26vw;
     padding-top: 4rem;
     height: 350px;
     display: flex;
@@ -108,7 +108,8 @@
   .div_info {
     display: flex;
     justify-content: space-evenly;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
+    max-height: 330px;
   }
   .info_container {
     flex: 0 1 64vw;
@@ -154,7 +155,7 @@
     font-size: 1.8rem;
   }
   .info_and_icon_container {
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
 }
 
@@ -166,6 +167,7 @@
     align-items: center;
     justify-content: space-evenly;
     margin: 2rem 1rem 3rem 1rem;
+    height: 65vh;
   }
   .div_info {
     display: flex;
@@ -177,12 +179,15 @@
   .planet_icon_div {
     width: 40vw;
   }
+  .planet_inner_menu_tablet {
+    max-width: 450px;
+  }
   .info_container {
     flex: 0 1 40vh;
     min-width: 25vw;
     justify-content: space-around;
     padding: 0 0.5rem 0 0.8rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: start;
   }
   .planet_inner_menu_tablet {
@@ -230,11 +235,57 @@
     margin: 0;
   }
   .div_planet_info p {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     margin: 0;
   }
   .div_planet_info_last p {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+}
+
+/*   Biggest Desktop Layout   */
+@media screen and (min-width: 1280px) {
+  .div_info {
+    margin-left: 3rem;
+    max-height: 55vh;
+  }
+  .info_container {
+    font-size: 1.7rem;
+  }
+  .div_planet_info {
+    height: 150px;
+    max-width: 330px;
+  }
+  .div_planet_info_last {
+    height: 150px;
+    max-width: 330px;
+  }
+  .info_and_icon_container {
+    justify-content: center;
+    height: 67vh;
+  }
+  .div_planet_all_info {
+    justify-content: center;
+  }
+
+  .planet_icon_div {
+    margin-right: 3rem;
+    max-width: 550px;
+  }
+  .div_planet_info h4 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .div_planet_info_last h4 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .div_planet_info p {
+    font-size: 2.3rem;
+  }
+  .div_planet_info_last p {
+    font-size: 2.3rem;
     margin: 0;
   }
 }
