@@ -1,20 +1,20 @@
 .svg_animate {
   animation-name: AnimatePlanet;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-delay: 1500ms;
 }
 
 .svg_animate_delayed {
   animation-name: AnimatePlanet;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-delay: 1800ms;
 }
 
 .svg_animate_delayed2 {
   animation-name: AnimatePlanet;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-delay: 2300ms;
 }
@@ -24,7 +24,7 @@
     opacity: 100%;
   }
   50% {
-    opacity: 50%;
+    opacity: 60%;
   }
   100% {
     opacity: 100%;
