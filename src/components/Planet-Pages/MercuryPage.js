@@ -1,10 +1,8 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import planetInfoArray from "../Planets-Information/PlanetsInformation";
-import { IternalStructureAction } from "../../Store/IternalStructure-slice";
 import InfoSection from "../UI/info-section/InfoSection";
 
 const MercuryPage = () => {
-  const dispatch = useDispatch();
   const showIternalStructure = useSelector(
     (state) => state.IternalStructure.toggleDisplay
   );
@@ -12,9 +10,6 @@ const MercuryPage = () => {
   const SVG_PLANET = currPlanet.componentSvg();
   const SVG_ITERNAL_STRUCTURE = currPlanet.InternalStructureSvg();
 
-  const toggleIternalStructureHandler = () => {
-    dispatch(IternalStructureAction.toggleIternalDisplay());
-  };
 
   return (
     <>
