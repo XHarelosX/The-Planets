@@ -1,12 +1,10 @@
-import React from "react";
-import { useDispatch } from "react-redux";
+import styles from "./Header.module.css";
 import NavBarMenuItem from "../UI/navbar-menu-item/NavBarMenuItem";
+import { useDispatch } from "react-redux";
 import { sideBarActions } from "../../Store/SideBar-slice";
 import { backDropAction } from "../../Store/Backdrop-slice";
 import { IternalStructureAction } from "../../Store/IternalStructure-slice";
-
-import styles from "./Header.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -17,8 +15,8 @@ const Header = () => {
   };
 
   const resetIternalStructureDisplay = () => {
-    dispatch(IternalStructureAction.resetDisplay())
-  }
+    dispatch(IternalStructureAction.resetDisplay());
+  };
 
   return (
     <>
@@ -26,14 +24,70 @@ const Header = () => {
         <h2 className={styles.h2}>THE PLANETS</h2>
         <nav>
           <ul className={styles["div-planets-desktop"]}>
-            <Link onClick={resetIternalStructureDisplay} to="Mercury"><NavBarMenuItem menuText={"MERCURY"} /></Link>
-            <Link onClick={resetIternalStructureDisplay} to="Venus"><NavBarMenuItem menuText={"VENUS"} /></Link>
-            <Link onClick={resetIternalStructureDisplay} to="Earth"><NavBarMenuItem menuText={"EARTH"} /></Link>
-            <Link onClick={resetIternalStructureDisplay} to="Mars"><NavBarMenuItem menuText={"MARS"} /></Link>
-            <Link onClick={resetIternalStructureDisplay} to="Jupiter"><NavBarMenuItem menuText={"JUPITER"} /></Link>
-            <Link onClick={resetIternalStructureDisplay} to="Saturn"><NavBarMenuItem menuText={"SATURN"} /></Link>
-            <Link onClick={resetIternalStructureDisplay} to="Uranus"><NavBarMenuItem menuText={"URANUS"} /></Link>
-            <Link onClick={resetIternalStructureDisplay} to="Neptune"><NavBarMenuItem menuText={"NEPTUNE"} /></Link>
+            <NavLink
+              className={styles.nav_link}
+              activeClassName={styles.nav_active}
+              onClick={resetIternalStructureDisplay}
+              to="/Mercury"
+            >
+              <NavBarMenuItem menuText={"MERCURY"} />
+            </NavLink>
+            <NavLink
+              className={styles.nav_link}
+              activeClassName={styles.nav_active}
+              onClick={resetIternalStructureDisplay}
+              to="/Venus"
+            >
+              <NavBarMenuItem menuText={"VENUS"} />
+            </NavLink>
+            <NavLink
+              className={styles.nav_link}
+              activeClassName={styles.nav_active}
+              onClick={resetIternalStructureDisplay}
+              to="/Earth"
+            >
+              <NavBarMenuItem menuText={"EARTH"} />
+            </NavLink>
+            <NavLink
+              className={styles.nav_link}
+              activeClassName={styles.nav_active}
+              onClick={resetIternalStructureDisplay}
+              to="/Mars"
+            >
+              <NavBarMenuItem menuText={"MARS"} />
+            </NavLink>
+            <NavLink
+              className={styles.nav_link}
+              activeClassName={styles.nav_active}
+              onClick={resetIternalStructureDisplay}
+              to="/Jupiter"
+            >
+              <NavBarMenuItem menuText={"JUPITER"} />
+            </NavLink>
+            <NavLink
+              className={styles.nav_link}
+              activeClassName={styles.nav_active}
+              onClick={resetIternalStructureDisplay}
+              to="/Saturn"
+            >
+              <NavBarMenuItem menuText={"SATURN"} />
+            </NavLink>
+            <NavLink
+              className={styles.nav_link}
+              activeClassName={styles.nav_active}
+              onClick={resetIternalStructureDisplay}
+              to="/Uranus"
+            >
+              <NavBarMenuItem menuText={"URANUS"} />
+            </NavLink>
+            <NavLink
+              className={styles.nav_link}
+              activeClassName={styles.nav_active}
+              onClick={resetIternalStructureDisplay}
+              to="/Neptune"
+            >
+              <NavBarMenuItem menuText={"NEPTUNE"} />
+            </NavLink>
           </ul>
         </nav>
         <div

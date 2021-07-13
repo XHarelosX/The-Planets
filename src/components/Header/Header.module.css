@@ -6,7 +6,12 @@
   height: 50px;
   padding: 0 0 0 0.8rem;
 }
-
+.nav_link {
+  text-decoration: none;
+}
+.nav_active {
+  text-decoration: underline rgb(255, 255, 255);
+}
 .div-planets-desktop {
   display: none;
 }
