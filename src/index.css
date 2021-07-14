@@ -1,6 +1,6 @@
 :root {
   --white: #ffffff;
-  --font: "Open Sans Condensed", sans-serif;
+  --font: "Open Sans Condensed", "San Francisco", sans-serif;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
@@ -10,7 +10,7 @@
 }
 
 html {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "San Francisco", "Noto Sans JP", Arial, san-serif;
 }
 
 body {

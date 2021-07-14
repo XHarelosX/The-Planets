@@ -65,7 +65,7 @@
 .planet_inner_menu {
   color: rgb(165, 165, 165);
   font-family: var(--font);
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   display: flex;
   justify-content: space-evenly;
   border-bottom: 1px solid grey;
