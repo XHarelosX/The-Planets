@@ -30,7 +30,7 @@ const SideBarMenu = () => {
           onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
-          to="Mercury"
+          to="/The-Planets/Mercury"
         >
           <NavBarMenuItem
             Classes={styles["div-single-planet"]}
@@ -41,7 +41,7 @@ const SideBarMenu = () => {
           onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
-          to="Venus"
+          to="/The-Planets/Venus"
         >
           <NavBarMenuItem
             Classes={styles["div-single-planet"]}
@@ -52,7 +52,7 @@ const SideBarMenu = () => {
           onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
-          to="Earth"
+          to="/The-Planets/Earth"
         >
           <NavBarMenuItem
             Classes={styles["div-single-planet"]}
@@ -63,9 +63,8 @@ const SideBarMenu = () => {
           onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
-          to="Mars"
+          to="/The-Planets/Mars"
         >
-          {" "}
           <NavBarMenuItem
             Classes={styles["div-single-planet"]}
             menuText={"MARS"}
@@ -75,7 +74,7 @@ const SideBarMenu = () => {
           onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
-          to="Jupiter"
+          to="/The-Planets/Jupiter"
         >
           <NavBarMenuItem
             Classes={styles["div-single-planet"]}
@@ -86,7 +85,7 @@ const SideBarMenu = () => {
           onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
-          to="Saturn"
+          to="/The-Planets/Saturn"
         >
           <NavBarMenuItem
             Classes={styles["div-single-planet"]}
@@ -97,7 +96,7 @@ const SideBarMenu = () => {
           onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
-          to="Uranus"
+          to="/The-Planets/Uranus"
         >
           <NavBarMenuItem
             Classes={styles["div-single-planet"]}
@@ -108,7 +107,7 @@ const SideBarMenu = () => {
           onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
-          to="Neptune"
+          to="/The-Planets/Neptune"
         >
           <NavBarMenuItem
             Classes={styles["div-single-planet"]}

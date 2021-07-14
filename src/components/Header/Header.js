@@ -28,7 +28,7 @@ const Header = () => {
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
-              to="/Mercury"
+              to="/The-Planets/Mercury"
             >
               <NavBarMenuItem menuText={"MERCURY"} />
             </NavLink>
@@ -36,7 +36,7 @@ const Header = () => {
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
-              to="/Venus"
+              to="/The-Planets/Venus"
             >
               <NavBarMenuItem menuText={"VENUS"} />
             </NavLink>
@@ -44,7 +44,7 @@ const Header = () => {
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
-              to="/Earth"
+              to="/The-Planets/Earth"
             >
               <NavBarMenuItem menuText={"EARTH"} />
             </NavLink>
@@ -52,7 +52,7 @@ const Header = () => {
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
-              to="/Mars"
+              to="/The-Planets/Mars"
             >
               <NavBarMenuItem menuText={"MARS"} />
             </NavLink>
@@ -60,7 +60,7 @@ const Header = () => {
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
-              to="/Jupiter"
+              to="/The-Planets/Jupiter"
             >
               <NavBarMenuItem menuText={"JUPITER"} />
             </NavLink>
@@ -68,7 +68,7 @@ const Header = () => {
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
-              to="/Saturn"
+              to="/The-Planets/Saturn"
             >
               <NavBarMenuItem menuText={"SATURN"} />
             </NavLink>
@@ -76,7 +76,7 @@ const Header = () => {
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
-              to="/Uranus"
+              to="/The-Planets/Uranus"
             >
               <NavBarMenuItem menuText={"URANUS"} />
             </NavLink>
@@ -84,7 +84,7 @@ const Header = () => {
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
-              to="/Neptune"
+              to="/The-Planets/Neptune"
             >
               <NavBarMenuItem menuText={"NEPTUNE"} />
             </NavLink>
