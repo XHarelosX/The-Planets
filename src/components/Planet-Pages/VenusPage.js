@@ -1,11 +1,7 @@
-import { useSelector } from "react-redux";
 import planetInfoArray from "../Planets-Information/PlanetsInformation";
 import InfoSection from "../UI/info-section/InfoSection";
 
 const UranusPage = () => {
-  const showIternalStructure = useSelector(
-    (state) => state.IternalStructure.toggleDisplay
-  );
   const currPlanet = planetInfoArray[1];
   const SVG_PLANET = currPlanet.componentSvg();
   const SVG_ITERNAL_STRUCTURE = currPlanet.InternalStructureSvg();
@@ -13,7 +9,6 @@ const UranusPage = () => {
   return (
     <>
       <InfoSection
-        displayIternal={showIternalStructure}
         svgIternalStructure={SVG_ITERNAL_STRUCTURE}
         svgPlanet={SVG_PLANET}
         planetName={currPlanet.name}

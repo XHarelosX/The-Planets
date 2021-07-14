@@ -1,15 +1,28 @@
 .span_num {
   display: none;
 }
+.overwiew_menu:hover {
+  text-decoration: underline;
+}
+.active_tab {
+  color: rgb(204, 134, 69);
+}
 
 @media screen and (min-width: 768px) {
+  .active_tab {
+    background-color: rgb(160, 95, 34);
+    color: white;
+  }
   .overwiew_menu {
     display: flex;
     width: 100%;
     border: 1px solid gray;
   }
+
   .overwiew_menu:hover {
-    background-color: rgb(85, 3, 161);
+    background-color: rgb(151, 51, 11);
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .overwiew_menu h4 {

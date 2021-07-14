@@ -21,30 +21,14 @@ function App() {
         <Header />
         <SideBarMenu />
         <Switch>
-          <Route path="/Mercury">
-            <MercuryPage />
-          </Route>
-          <Route path="/Earth">
-            <EarthPage />
-          </Route>
-          <Route path="/Mars">
-            <MarsPage />
-          </Route>
-          <Route path="/Saturn">
-            <SaturnPage />
-          </Route>
-          <Route path="/Uranus">
-            <UranusPage />
-          </Route>
-          <Route path="/Venus">
-            <VenusPage />
-          </Route>
-          <Route path="/Neptune">
-            <NeptunePage />
-          </Route>
-          <Route path="/Jupiter">
-            <JupiterPage />
-          </Route>
+          <Route path="/Earth" component={EarthPage} />
+          <Route path="/Mars" component={MarsPage} />
+          <Route path="/Saturn" component={SaturnPage} />
+          <Route path="/Uranus" component={UranusPage} />
+          <Route path="/Venus" component={VenusPage} />
+          <Route path="/Neptune" component={NeptunePage} />
+          <Route path="/Jupiter" component={JupiterPage} />
+          <Route path={["/Mercury", "/"]} component={MercuryPage} />
         </Switch>
       </Router>
     </div>

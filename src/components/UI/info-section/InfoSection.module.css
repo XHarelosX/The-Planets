@@ -75,8 +75,8 @@
   margin: 0.5rem 0;
 }
 .planet_inner_menu h4:hover {
-  border-bottom: 0.2rem solid rgb(111, 3, 211);
   margin-bottom: 0.3rem;
+  cursor: pointer;
 }
 .planet_inner_menu_tablet {
   display: none;

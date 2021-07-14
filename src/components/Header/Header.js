@@ -3,7 +3,7 @@ import NavBarMenuItem from "../UI/navbar-menu-item/NavBarMenuItem";
 import { useDispatch } from "react-redux";
 import { sideBarActions } from "../../Store/SideBar-slice";
 import { backDropAction } from "../../Store/Backdrop-slice";
-import { IternalStructureAction } from "../../Store/IternalStructure-slice";
+import { InnerMenuActions } from "../../Store/InnerMenu-slice";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -14,8 +14,8 @@ const Header = () => {
     dispatch(backDropAction.toggleBackDrop());
   };
 
-  const resetIternalStructureDisplay = () => {
-    dispatch(IternalStructureAction.resetDisplay());
+  const resetDisplay = () => {
+    dispatch(InnerMenuActions.toggleOverviewDisplay());
   };
 
   return (
@@ -27,7 +27,7 @@ const Header = () => {
             <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
-              onClick={resetIternalStructureDisplay}
+              onClick={resetDisplay}
               to="/Mercury"
             >
               <NavBarMenuItem menuText={"MERCURY"} />
@@ -35,7 +35,7 @@ const Header = () => {
             <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
-              onClick={resetIternalStructureDisplay}
+              onClick={resetDisplay}
               to="/Venus"
             >
               <NavBarMenuItem menuText={"VENUS"} />
@@ -43,7 +43,7 @@ const Header = () => {
             <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
-              onClick={resetIternalStructureDisplay}
+              onClick={resetDisplay}
               to="/Earth"
             >
               <NavBarMenuItem menuText={"EARTH"} />
@@ -51,7 +51,7 @@ const Header = () => {
             <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
-              onClick={resetIternalStructureDisplay}
+              onClick={resetDisplay}
               to="/Mars"
             >
               <NavBarMenuItem menuText={"MARS"} />
@@ -59,7 +59,7 @@ const Header = () => {
             <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
-              onClick={resetIternalStructureDisplay}
+              onClick={resetDisplay}
               to="/Jupiter"
             >
               <NavBarMenuItem menuText={"JUPITER"} />
@@ -67,7 +67,7 @@ const Header = () => {
             <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
-              onClick={resetIternalStructureDisplay}
+              onClick={resetDisplay}
               to="/Saturn"
             >
               <NavBarMenuItem menuText={"SATURN"} />
@@ -75,7 +75,7 @@ const Header = () => {
             <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
-              onClick={resetIternalStructureDisplay}
+              onClick={resetDisplay}
               to="/Uranus"
             >
               <NavBarMenuItem menuText={"URANUS"} />
@@ -83,7 +83,7 @@ const Header = () => {
             <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
-              onClick={resetIternalStructureDisplay}
+              onClick={resetDisplay}
               to="/Neptune"
             >
               <NavBarMenuItem menuText={"NEPTUNE"} />

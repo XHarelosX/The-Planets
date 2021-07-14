@@ -1,14 +1,45 @@
 import styles from "./InfoSection.module.css";
 import InnerMenuPlanetPage from "../inner-manu-planet-page/InnerMenuPlanetPage";
+import { useDispatch, useSelector } from "react-redux";
+import { InnerMenuActions } from "../../../Store/InnerMenu-slice";
 
 function InfoSection(props) {
+  const dispatch = useDispatch();
+  const innerManuState = useSelector((state) => state.InnerMenu);
+
+  const toggleIternalStructureHandler = () => {
+    dispatch(InnerMenuActions.toggleIternalDisplay());
+  };
+  const toggleOvervieweHandler = () => {
+    dispatch(InnerMenuActions.toggleOverviewDisplay());
+  };
+  const toggleSerfaceGeologyeHandler = () => {
+    dispatch(InnerMenuActions.toggleSurfaceDisplay());
+  };
+
+  const InnerMenuActiveTab = () => {
+    if (innerManuState.overviewDisplay) {
+      return props.svgPlanet;
+    }
+    if (innerManuState.iternalDisplay) {
+      return props.svgIternalStructure;
+    }
+    if (innerManuState.surfaceDisplay) {
+      return props.svgPlanet;
+    }
+  };
+  const isActive = InnerMenuActiveTab();
+
   return (
     <>
-      <InnerMenuPlanetPage Classes={styles.planet_inner_menu}/>
+      <InnerMenuPlanetPage
+        Classes={styles.planet_inner_menu}
+        toggleOverview={toggleOvervieweHandler}
+        toggleIntral={toggleIternalStructureHandler}
+        toggleSerface={toggleSerfaceGeologyeHandler}
+      />
       <div className={styles.info_and_icon_container}>
-        <div className={styles.planet_icon_div}>
-          {props.displayIternal ? props.svgIternalStructure : props.svgPlanet}
-        </div>
+        <div className={styles.planet_icon_div}>{isActive}</div>
         <div className={styles.div_info}>
           <div className={styles.info_container}>
             <h1>{props.planetName}</h1>
@@ -25,7 +56,11 @@ function InfoSection(props) {
               </span>
             </p>
           </div>
-          <InnerMenuPlanetPage Classes={styles.planet_inner_menu_tablet}            
+          <InnerMenuPlanetPage
+            Classes={styles.planet_inner_menu_tablet}
+            toggleOverview={toggleOvervieweHandler}
+            toggleIntral={toggleIternalStructureHandler}
+            toggleSerface={toggleSerfaceGeologyeHandler}
           />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { sideBarActions } from "../../Store/SideBar-slice";
 import { backDropAction } from "../../Store/Backdrop-slice";
-import { IternalStructureAction } from "../../Store/IternalStructure-slice";
+import { InnerMenuActions } from "../../Store/InnerMenu-slice";
 import { NavLink } from "react-router-dom";
 import NavBarMenuItem from "../UI/navbar-menu-item/NavBarMenuItem";
 import styles from "./SideBar.module.css";
@@ -16,8 +16,8 @@ const SideBarMenu = () => {
     dispatch(backDropAction.toggleBackDrop());
   };
 
-  const resetIternalStructureDisplay = () => {
-    dispatch(IternalStructureAction.resetDisplay());
+  const resetDisplay = () => {
+    dispatch(InnerMenuActions.toggleOverviewDisplay());
   };
   const navbarClasses = isSideBarOpen
     ? [styles.div_sidebar, styles._active].join(" ")
@@ -27,7 +27,7 @@ const SideBarMenu = () => {
     <nav>
       <ul className={navbarClasses} onClick={sideBarToggleHandler}>
         <NavLink
-          onClick={resetIternalStructureDisplay}
+          onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
           to="Mercury"
@@ -38,7 +38,7 @@ const SideBarMenu = () => {
           />
         </NavLink>
         <NavLink
-          onClick={resetIternalStructureDisplay}
+          onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
           to="Venus"
@@ -49,7 +49,7 @@ const SideBarMenu = () => {
           />
         </NavLink>
         <NavLink
-          onClick={resetIternalStructureDisplay}
+          onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
           to="Earth"
@@ -60,7 +60,7 @@ const SideBarMenu = () => {
           />
         </NavLink>
         <NavLink
-          onClick={resetIternalStructureDisplay}
+          onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
           to="Mars"
@@ -72,7 +72,7 @@ const SideBarMenu = () => {
           />
         </NavLink>
         <NavLink
-          onClick={resetIternalStructureDisplay}
+          onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
           to="Jupiter"
@@ -83,7 +83,7 @@ const SideBarMenu = () => {
           />
         </NavLink>
         <NavLink
-          onClick={resetIternalStructureDisplay}
+          onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
           to="Saturn"
@@ -94,7 +94,7 @@ const SideBarMenu = () => {
           />
         </NavLink>
         <NavLink
-          onClick={resetIternalStructureDisplay}
+          onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
           to="Uranus"
@@ -105,7 +105,7 @@ const SideBarMenu = () => {
           />
         </NavLink>
         <NavLink
-          onClick={resetIternalStructureDisplay}
+          onClick={resetDisplay}
           className={styles.nav_link}
           activeClassName={styles.nav_active}
           to="Neptune"
