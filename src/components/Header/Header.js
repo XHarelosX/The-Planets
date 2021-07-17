@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { sideBarActions } from "../../Store/SideBar-slice";
 import { backDropAction } from "../../Store/Backdrop-slice";
 import { InnerMenuActions } from "../../Store/InnerMenu-slice";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -24,70 +24,70 @@ const Header = () => {
         <h2 className={styles.h2}>THE PLANETS</h2>
         <nav>
           <ul className={styles["div-planets-desktop"]}>
-            <Link
+            <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
               to="/The-Planets/Mercury"
             >
               <NavBarMenuItem menuText={"MERCURY"} />
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
               to="/The-Planets/Venus"
             >
               <NavBarMenuItem menuText={"VENUS"} />
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
               to="/The-Planets/Earth"
             >
               <NavBarMenuItem menuText={"EARTH"} />
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
               to="/The-Planets/Mars"
             >
               <NavBarMenuItem menuText={"MARS"} />
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
               to="/The-Planets/Jupiter"
             >
               <NavBarMenuItem menuText={"JUPITER"} />
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
               to="/The-Planets/Saturn"
             >
               <NavBarMenuItem menuText={"SATURN"} />
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
               to="/The-Planets/Uranus"
             >
               <NavBarMenuItem menuText={"URANUS"} />
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               className={styles.nav_link}
               activeClassName={styles.nav_active}
               onClick={resetDisplay}
               to="/The-Planets/Neptune"
             >
               <NavBarMenuItem menuText={"NEPTUNE"} />
-            </Link>
+            </NavLink>
           </ul>
         </nav>
         <div
