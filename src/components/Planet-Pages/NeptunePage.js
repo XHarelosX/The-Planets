@@ -9,6 +9,7 @@ const NeptunePage = () => {
   return (
     <>
       <InfoSection
+        surfaceGeology={currPlanet.surfaceImg}
         svgIternalStructure={SVG_ITERNAL_STRUCTURE}
         svgPlanet={SVG_PLANET}
         planetName={currPlanet.name}

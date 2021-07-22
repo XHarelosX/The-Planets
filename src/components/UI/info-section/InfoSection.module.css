@@ -7,6 +7,14 @@
   font-family: var(--font);
   color: white;
 }
+.imgSurface {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation-name: AnimatePlanet2;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
 .planet_icon_div {
   width: 300px;
   animation-name: AnimatePlanet2;
@@ -93,6 +101,10 @@
 @media screen and (min-width: 768px) {
   .planet_inner_menu {
     display: none;
+  }
+  .imgSurface {
+    height: 400px;
+    width: 400px;
   }
   .planet_inner_menu_tablet {
     display: block;

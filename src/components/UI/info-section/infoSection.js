@@ -25,7 +25,7 @@ function InfoSection(props) {
       return props.svgIternalStructure;
     }
     if (innerManuState.surfaceDisplay) {
-      return props.svgPlanet;
+      return <img src={`${process.env.PUBLIC_URL}/${props.surfaceGeology}`} alt="Surface Img" className={styles.imgSurface}/>;
     }
   };
   const isActive = InnerMenuActiveTab();
