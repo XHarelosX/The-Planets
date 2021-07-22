@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/The-Planets/static/css/main.78c0a631.chunk.css",
-    "main.js": "/The-Planets/static/js/main.a1a066c6.chunk.js",
-    "main.js.map": "/The-Planets/static/js/main.a1a066c6.chunk.js.map",
+    "main.css": "/The-Planets/static/css/main.62368322.chunk.css",
+    "main.js": "/The-Planets/static/js/main.0b94fb0d.chunk.js",
+    "main.js.map": "/The-Planets/static/js/main.0b94fb0d.chunk.js.map",
     "runtime-main.js": "/The-Planets/static/js/runtime-main.e85aeadf.js",
     "runtime-main.js.map": "/The-Planets/static/js/runtime-main.e85aeadf.js.map",
-    "static/js/2.f92de5b4.chunk.js": "/The-Planets/static/js/2.f92de5b4.chunk.js",
-    "static/js/2.f92de5b4.chunk.js.map": "/The-Planets/static/js/2.f92de5b4.chunk.js.map",
+    "static/js/2.c97c485f.chunk.js": "/The-Planets/static/js/2.c97c485f.chunk.js",
+    "static/js/2.c97c485f.chunk.js.map": "/The-Planets/static/js/2.c97c485f.chunk.js.map",
     "index.html": "/The-Planets/index.html",
-    "static/css/main.78c0a631.chunk.css.map": "/The-Planets/static/css/main.78c0a631.chunk.css.map",
-    "static/js/2.f92de5b4.chunk.js.LICENSE.txt": "/The-Planets/static/js/2.f92de5b4.chunk.js.LICENSE.txt"
+    "static/css/main.62368322.chunk.css.map": "/The-Planets/static/css/main.62368322.chunk.css.map",
+    "static/js/2.c97c485f.chunk.js.LICENSE.txt": "/The-Planets/static/js/2.c97c485f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e85aeadf.js",
-    "static/js/2.f92de5b4.chunk.js",
-    "static/css/main.78c0a631.chunk.css",
-    "static/js/main.a1a066c6.chunk.js"
+    "static/js/2.c97c485f.chunk.js",
+    "static/css/main.62368322.chunk.css",
+    "static/js/main.0b94fb0d.chunk.js"
   ]
 }
